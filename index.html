@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+</head>
+<style>
+input{
+background-color: black;
+color: bisque;
+width: 6em;
+height: 4em;
+}
+
+#display{
+    background-color: white;
+    color: black;
+    width: 18em;
+    height: 4em;
+}
+#mainCalculator{
+    margin-left:50%;
+    margin-top: 25%;
+}
+
+h1{
+    color: brown;
+    font-size: 8em;
+    transition: 0.5;
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
+                     0 3px 0 #ccc, 0 4px 0 #ccc,
+                     0 5px 0 #ccc, 0 6px 0 #ccc,
+                     0 7px 0 #ccc, 0 8px 0 #ccc,
+                     0 9px 0 #ccc, 0 10px 0 #ccc,
+                     0 11px 0 #ccc, 0 12px 0 #ccc,
+                     0 20px 30px rgba(0, 0, 0, 0.5);
+}
+
+</style>
+
+<body>
+    <div id="mainCalculator">
+        <h1>the best calculator for you</h1>
+        <form MainButton>
+            <br> <input type="text" name="display" id="display">
+            <br>
+            <input type="button" value="1" onclick="display.value +='1'">
+            <input type="button" value="2"onclick="display.value +='2'">
+            <input type="button" value="3"onclick="display.value +='3'"><br>
+            <input type="button" value="4"onclick="display.value +='4'">
+            <input type="button" value="5"onclick="display.value +='5'">
+            <input type="button" value="6"onclick="display.value +='6'"><br>
+            <input type="button" value="7"onclick="display.value +='7'">
+            <input type="button" value="8"onclick="display.value +='8'">
+            <input type="button" value="9"onclick="display.value +='9'"><br>
+            <input type="button" value="0"onclick="display.value +='0'">
+            <input type="button" value="+"onclick="display.value +='+'">
+            <input type="button" value="/"onclick="display.value +='/'"><br>
+            <input type="button" value="-"onclick="display.value +='-'">
+            <input type="button" value="*"onclick="display.value +='*'">
+            <input type="button" value="="onclick="display.value= eval(display.value)">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
