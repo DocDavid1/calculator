@@ -7,25 +7,36 @@
     <title>CALCULATOR</title>
 </head>
 <style>
+    body{background-color: grey;}
 input{
-background-color: black;
+background-color: rgb(37, 37, 37);
 color: bisque;
-width: 6em;
+width: 10em;
 height: 4em;
+border-radius: 3em;
 }
 
 #display{
     background-color: white;
-    color: black;
-    width: 18em;
+    color: rgb(49, 49, 49);
+    
+    width: 30em;
     height: 4em;
+ margin-bottom: 2em;
 }
 #mainCalculator{
-    margin-left:50%;
-    margin-top: 25%;
+    position: relative;
+    border-radius: 5em;
+    margin-left:38em;
+    margin-right: 50%;
+    margin-top: 10%;
+    background-color: rgb(27, 27, 27);
+    width: 28em;
+    padding: 4em;
 }
 
 h1{
+    margin-left: 3em;
     color: brown;
     font-size: 8em;
     transition: 0.5;
@@ -41,26 +52,28 @@ h1{
 </style>
 
 <body>
+    <h1>the best calculator for you</h1>
     <div id="mainCalculator">
-        <h1>the best calculator for you</h1>
+        
         <form MainButton>
             <br> <input type="text" name="display" id="display">
             <br>
+            <div class="div1">
             <input type="button" value="1" onclick="display.value +='1'">
             <input type="button" value="2"onclick="display.value +='2'">
-            <input type="button" value="3"onclick="display.value +='3'"><br>
+            <input type="button" value="3"onclick="display.value +='3'"></div><br><div class="div2">
             <input type="button" value="4"onclick="display.value +='4'">
             <input type="button" value="5"onclick="display.value +='5'">
-            <input type="button" value="6"onclick="display.value +='6'"><br>
+            <input type="button" value="6"onclick="display.value +='6'"></div><br><div class="div3">
             <input type="button" value="7"onclick="display.value +='7'">
             <input type="button" value="8"onclick="display.value +='8'">
-            <input type="button" value="9"onclick="display.value +='9'"><br>
+            <input type="button" value="9"onclick="display.value +='9'"></div><br><div class="div4">
             <input type="button" value="0"onclick="display.value +='0'">
             <input type="button" value="+"onclick="display.value +='+'">
-            <input type="button" value="/"onclick="display.value +='/'"><br>
+            <input type="button" value="/"onclick="display.value +='/'"></div><br><div class="div5">
             <input type="button" value="-"onclick="display.value +='-'">
             <input type="button" value="*"onclick="display.value +='*'">
-            <input type="button" value="="onclick="display.value= eval(display.value)">
+            <input type="button" value="="onclick="display.value= eval(display.value)"></div>
 
 
 
